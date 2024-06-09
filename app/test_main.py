@@ -7,7 +7,7 @@ def test_outdated_products() -> None:
     products = [
         {
             "name": "salmon",
-            "expiration_date": datetime.date(2024, 9, 2),
+            "expiration_date": datetime.date(2024, 9, 5),
             "price": 600
         },
         {
