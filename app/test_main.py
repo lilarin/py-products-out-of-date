@@ -4,7 +4,7 @@ from app.main import outdated_products
 
 
 @mock.patch("app.main.datetime")
-def test_outdated_products(mock_datetime):
+def test_outdated_products(mock_datetime: mock.MagicMock) -> None:
     mock_datetime.date.today.return_value = datetime.date.today()
     test_data = [
         {
